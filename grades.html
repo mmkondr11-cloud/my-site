@@ -1,29 +1,45 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>grades</title>
+    <title>Успеваемость</title>
+    <style>
+        body { background-color: #0d0e15; color: #e4e6eb; font-family: 'Segoe UI', Arial, sans-serif; padding: 40px; margin: 0; }
+        .nav { text-align: center; margin-bottom: 30px; }
+        .nav a { color: #4da6ff; text-decoration: none; font-weight: bold; margin: 0 15px; padding: 8px 16px; border: 1px solid #4da6ff; border-radius: 20px; transition: 0.3s; }
+        .nav a:hover { background-color: #4da6ff; color: #0d0e15; }
+        .nav a.active { background-color: #4da6ff; color: #0d0e15; }
+        .container { max-width: 700px; margin: 0 auto; background: #161925; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        h1 { color: #ffffff; text-align: center; border-bottom: 2px solid #4da6ff; padding-bottom: 10px; }
+        .grades-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .grades-table th { background-color: #4da6ff; color: #0d0e15; padding: 12px; text-align: left; }
+        .grades-table td { padding: 12px; border-bottom: 1px solid #2e344e; }
+        .grades-table tr:hover { background-color: #1e2235; }
+        .perfect { color: #00ffcc; font-weight: bold; }
+    </style>
 </head>
-<body bgcolor="#1a1a1a" text="white" link="#4da6ff" vlink="#ff80df" style="font-family: Arial, sans-serif; padding: 30px;">
-    
-    <p align="center">
-        <a href="index.html"><b>[about]</b></a> | 
-        <a href="hobbies.html"><b>[hobbies]</b></a> | 
-        <a href="grades.html"><b>[grades]</b></a>
-    </p>
-    <hr>
-    
-    <h1 align="center">Моя успеваемость за год</h1>
-    
-    <table border="1" align="center" cellpadding="12" cellspacing="0" bgcolor="white" style="color: black; border-collapse: collapse;">
-        <tr bgcolor="#333333" style="color: white;">
-            <th>Дисциплина</th>
-            <th>Текущий балл (0-100)</th>
-            <th>Результат</th>
-        </tr>
-        <tr><td>Информатика и ИТ</td><td align="center"><b>95</b></td><td><font color="green"><b>Отлично</b></font></td></tr>
-        <tr><td>Математика</td><td align="center"><b>78</b></td><td><font color="blue"><b>Хорошо</b></font></td></tr>
-        <tr><td>Иностранный язык</td><td align="center"><b>91</b></td><td><font color="green"><b>Отлично</b></font></td></tr>
-        <tr><td>Физическая культура</td><td align="center"><b>100</b></td><td><font color="green"><b>Зачтено</b></font></td></tr>
-    </table>
+<body>
+
+    <div class="nav">
+        <a href="index.html">Главная</a>
+        <a href="hobbies.html">Увлечения</a>
+        <a href="grades.html" class="active">Успеваемость</a>
+    </div>
+
+    <div class="container">
+        <h1>Моя успеваемость (1 семестр)</h1>
+        
+        <table class="grades-table">
+            <tr>
+                <th>Наименование дисциплины</th>
+                <th>Оценка</th>
+            </tr>
+            <tr><td>Операционные системы</td><td class="perfect">Отлично (5)</td></tr>
+            <tr><td>Архитектура аппаратных средств</td><td>Хорошо (4)</td></tr>
+            <tr><td>Информационные технологии</td><td class="perfect">Отлично (5)</td></tr>
+            <tr><td>Основы алгоритмизации и программирования</td><td>Хорошо (4)</td></tr>
+            <tr><td>Компьютерные технологии</td><td class="perfect">Отлично (5)</td></tr>
+        </table>
+    </div>
+
 </body>
 </html>
